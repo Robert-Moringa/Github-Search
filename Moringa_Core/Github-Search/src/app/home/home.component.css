@@ -19,7 +19,23 @@ img{
     margin-top: 5%; margin-bottom: 5%;
 }
 
+#search{
+    background-color: rgba(93, 95, 239, 1);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    width: 70%;
+}
+
 .examples{
     display: flex; justify-content: space-between;
     margin-left: 5%; margin-right: 5%;
+
+}
+
+.repositories{
+    margin-bottom: 25%;
+}
+footer{
+    background-color: rgba(247, 247, 247, 1);
 }
