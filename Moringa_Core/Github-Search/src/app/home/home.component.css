@@ -17,3 +17,8 @@ img{
     margin-right: auto;
     margin-top: 5%; margin-bottom: 5%;
 }
+
+.examples{
+    display: flex; justify-content: space-between;
+    margin-left: 5%; margin-right: 5%;
+}
