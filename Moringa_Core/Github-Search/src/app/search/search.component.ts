@@ -8,10 +8,14 @@ import { SearchServiceService } from '../search-service.service';
 })
 export class SearchComponent implements OnInit {
 
+  names: any[] = [];
+
   constructor(private searchService: SearchServiceService) { }
 
   ngOnInit(): void {
-    this.searchService.getName();
+    this.searchService.getName().subscribe((response: any) => {
+      this.names=response.data;
+    });
   }
 
 }
