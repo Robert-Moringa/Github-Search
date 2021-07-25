@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
 import { HighlightDirective } from './highlight.directive';
+import { TimeAgoPipe } from './time-ago.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     SearchComponent,
-    HighlightDirective
+    HighlightDirective,
+    TimeAgoPipe
   ],
   imports: [
     BrowserModule,
