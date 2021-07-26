@@ -1,14 +1,16 @@
 <div style="text-align: center;">
     <form action="">
         <h3>Find an Username</h3>
-        <input type="text" placeholder="Search for Username" name="search" id="" ngModel>
-        <button type="submit">SUBMIT</button>
+        <input type="text" placeholder="Search for Username" name="search" #name ngModel>
+        <button type="submit" (click)='getValue(name.value)'>SUBMIT</button>
     </form>
 </div>
 
 
 <div>
-    <div *ngFor = 'let nam of names'>
-        <p>Name: {{nam.name}}</p>
+    <div>
+        <p>Name: {{names}}</p>
     </div>
+
+    <p> {{currentName}} </p>
 </div>

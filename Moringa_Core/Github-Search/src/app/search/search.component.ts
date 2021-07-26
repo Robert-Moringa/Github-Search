@@ -8,13 +8,18 @@ import { SearchServiceService } from '../search-service.service';
 })
 export class SearchComponent implements OnInit {
 
-  names: any[] = [];
+  names:string='';
 
   constructor(private searchService: SearchServiceService) { }
+  currentName= '';
+  getValue(val: any) {
+    this.currentName = val;
+  }
+  
 
   ngOnInit(): void {
     this.searchService.getName().subscribe((response: any) => {
-      this.names=response.data;
+      this.names=response.name;
     });
   }
 
