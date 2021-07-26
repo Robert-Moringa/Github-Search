@@ -13,5 +13,8 @@ export class SearchServiceService {
   getName() {
     return this.http.get('https://api.github.com/users/Robert-Moringa?access_token=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')
   }
+  getRepo() {
+    return this.http.get('https://api.github.com/users/Robert-Moringa/repos')
+  }
 
 }

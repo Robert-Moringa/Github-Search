@@ -21,6 +21,13 @@ export class SearchComponent implements OnInit {
     this.searchService.getName().subscribe((response: any) => {
       this.names=response.name;
     });
+
+    this.searchService.getRepo().subscribe((response: any) => {
+      var i: any;
+      for (i = 0; i < response.length; i++) {
+        console.log(response[i].name)
+      }
+    })
   }
 
 }
