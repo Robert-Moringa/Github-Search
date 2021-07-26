@@ -12,6 +12,7 @@ export class SearchComponent implements OnInit {
 
   constructor(private searchService: SearchServiceService) { }
   currentName= '';
+  repos= [];
   getValue(val: any) {
     this.currentName = val;
   }
@@ -25,7 +26,7 @@ export class SearchComponent implements OnInit {
     this.searchService.getRepo().subscribe((response: any) => {
       var i: any;
       for (i = 0; i < response.length; i++) {
-        console.log(response[i].name)
+        this.repos= response[i].name;
       }
     })
   }

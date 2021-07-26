@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { SearchComponent } from './search/search.component';
 import { HighlightDirective } from './highlight.directive';
 import { TimeAgoPipe } from './time-ago.pipe';
+import { AboutComponent } from './about/about.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { TimeAgoPipe } from './time-ago.pipe';
     HomeComponent,
     SearchComponent,
     HighlightDirective,
-    TimeAgoPipe
+    TimeAgoPipe,
+    AboutComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,

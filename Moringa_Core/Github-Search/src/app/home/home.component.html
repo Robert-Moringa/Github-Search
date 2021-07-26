@@ -1,36 +1,4 @@
-<header style="background-color: rgba(247, 247, 247, 1);">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-1"></div>
 
-            <div class="col-md-2">
-                <h3 style="font-family: 'Zhi Mang Xing', cursive;"><span style="color: rgba(41, 38, 43, 1); ">Myners</span><span style="color: rgba(165, 42, 42, 1);">Developers</span></h3>
-            </div>
-
-            <div class="col-md-6 menu">
-                <ul class="nav">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#" routerLink="/form">Search</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link disabled" href="#" >Blog</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-md-2">
-                <p class="log-in"><a href="">Log In</a></p>
-            </div>
-            <div class="col-md-1"></div>
-        </div>
-    </div>
-</header>
 
 <div class="container">
     <div class="row">
@@ -60,9 +28,8 @@
             <h2 class="github" style="color: rgba(92, 92, 92, 1);font-weight: bolder; margin-top: 20%;">Github Repositories</h2>
             <h3 style="color: rgba(92, 92, 92, 1); margin-left: 5%; margin-right: 5%; font-weight: unset;">A repository contains all of your project's files and each file's revision history. You can discuss and manage your project's work within the repository.</h3>
 
-            <button id="search"><h3>Search Repository/Username</h3></button>
-
-            <app-search></app-search>
+            <button id="search" routerLink="search"><h3>Search Repository/Username</h3></button>
+            
         </div>
     </div>
 </div>
