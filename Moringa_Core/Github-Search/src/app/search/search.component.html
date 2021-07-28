@@ -1,18 +1,24 @@
 <div style="text-align: center;">
-    <form action="">
-        <h3>Find an Username</h3>
-        <input type="text" placeholder="Search for Username" name="search" #name ngModel>
-        <button type="submit" (click)='getValue(name.value)'>SUBMIT</button>
+    <form action="" #name= 'ngForm' (ngSubmit)='getValue(name.value)'>
+        <h3>Find a Username and Repositories</h3>
+        <input type="text" placeholder="Enter the github name" name="search" #name ngModel>
+        <button type="submit">SUBMIT</button>
     </form>
-</div>
 
+    <div >
+        <div>
+            <p>Name entered: {{currentName}}</p>
+        </div>
+    
+        <p> Github Username: {{names}}</p>
 
-<div>
-    <div>
-        <p>Name: {{names}}</p>
+        <h4> {{names}} repositories</h4>
+
+        <div *ngFor= 'let repos of repos' id="repos">
+            
+            <p style="color: rgba(92, 92, 92, 1);"> {{repos.name}} </p>
+
+        </div>
     </div>
-
-    <p> {{currentName}} </p>
-
-    <p> {{repos}} </p>
+    
 </div>

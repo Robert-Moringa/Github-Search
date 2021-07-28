@@ -1,0 +1,13 @@
+.menu{
+    color: rgba(92, 92, 92, 1);
+    
+    align-items: center;
+}
+.nav{
+    display: flex; justify-content: space-between;
+    margin-left: 13%; margin-right: 13%;
+}
+a{
+    color: rgba(92, 92, 92, 1);
+    text-decoration: none;
+}
