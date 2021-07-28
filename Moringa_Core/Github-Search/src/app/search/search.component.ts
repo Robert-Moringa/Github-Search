@@ -20,6 +20,7 @@ export class SearchComponent implements OnInit {
     this.currentName=val.search;
     this.searchService.getName(val.search).subscribe((response: any) => {
       this.names=response.name;
+      console.log(response)
     })
 
     this.searchService.getRepo(val.search).subscribe((response: any) => {

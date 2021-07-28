@@ -14,7 +14,8 @@ export class SearchServiceService {
   
 
   getName(name:string) {
-    return this.http.get('https://api.github.com/users/' + name + '?access_token=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')
+    console.log(name)
+    return this.http.get('https://api.github.com/users/' + name + '?client_id=03dd913322b3db7d987&client_secret=020c0b3665296b33d758edeeced30473ef44f7da')
   }
   getRepo(name:string) {
     return this.http.get<any[]>('https://api.github.com/users/' + name + '/repos')
